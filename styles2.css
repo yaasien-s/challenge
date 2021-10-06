@@ -30,10 +30,6 @@ body {
   padding: 10px;
 }
 
-h1:hover {
-  font-size: 20px;
-  color: #000;
-}
 
 .des {
   padding: 3px;
@@ -62,3 +58,94 @@ button{
   border-color: royalblue;
   border-radius: 25%;
 }
+
+/* The <ul> tag defines an unordered (bulleted) list */
+ul {
+  /* Remove list bullets */
+  list-style-type: none;
+  
+  /* The CSS margin properties are used to create space around elements, outside of any defined borders */
+  margin: 0;
+  
+  /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders. */
+  padding: 0;
+  
+  /* The overflow property specifies what should happen if content overflows an element's box. */
+  overflow: hidden;
+  
+  /*  */ 
+  background-color: #333;
+}
+/* The <li> tag is used inside ordered lists(<ol>), unordered lists (<ul>), and in menu lists (<menu>). */
+li {
+  /* The float property is used for positioning and formatting content e.g. let an image float left to the text in a container. */
+  float:left;
+}
+/* The <a> tag defines a hyperlink, which is used to link from one page to another. */
+li a {
+  /* The display property specifies the display behavior (the type of rendering box) of an element. */
+  display: block;
+  
+  /*  */
+  color: white;
+  
+  /* The text-align property specifies the horizontal alignment of text in an element. */
+  text-align: center;
+  
+  /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders. */
+  padding: 14px 16px;
+  
+  /* The text-decoration property specifies the decoration added to text */
+  text-decoration: none;
+}
+/* The :hover selector is used to select elements when you mouse over them. */
+li a:hover {
+  /*  */
+  background-color: rgb(80, 2, 2, 0.2);
+  /*font-size: 130%; */
+}
+
+li a .active {
+  /*  */
+  background-color: #111;
+}
+
+.topnav a.active {
+  background-color: #410909;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+
+body{background-color: white;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: thistle;
+ 
+}
+p {
+background-color: transparent;
+}
+.intro {
+color:blue;
+background-color: #e6e6e6;
+}
+#p2 {
+background-color: transparent;
+
+}
+
+.dark{background-color:transparent;
+color:#020202;}
+.b1{background-color: transparent;}
