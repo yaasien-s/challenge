@@ -17,6 +17,7 @@ body {
   border-radius: 5px;
   margin: 2%;
   grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
 }
 
 .image img {
@@ -59,93 +60,53 @@ button{
   border-radius: 25%;
 }
 
-/* The <ul> tag defines an unordered (bulleted) list */
 ul {
-  /* Remove list bullets */
   list-style-type: none;
-  
-  /* The CSS margin properties are used to create space around elements, outside of any defined borders */
   margin: 0;
-  
-  /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders. */
   padding: 0;
-  
-  /* The overflow property specifies what should happen if content overflows an element's box. */
   overflow: hidden;
-  
-  /*  */ 
   background-color: #333;
 }
-/* The <li> tag is used inside ordered lists(<ol>), unordered lists (<ul>), and in menu lists (<menu>). */
+
 li {
-  /* The float property is used for positioning and formatting content e.g. let an image float left to the text in a container. */
-  float:left;
+  float: left;
 }
-/* The <a> tag defines a hyperlink, which is used to link from one page to another. */
-li a {
-  /* The display property specifies the display behavior (the type of rendering box) of an element. */
-  display: block;
-  
-  /*  */
+
+li a, .dropbtn {
+  display: inline-block;
   color: white;
-  
-  /* The text-align property specifies the horizontal alignment of text in an element. */
   text-align: center;
-  
-  /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders. */
   padding: 14px 16px;
-  
-  /* The text-decoration property specifies the decoration added to text */
   text-decoration: none;
 }
-/* The :hover selector is used to select elements when you mouse over them. */
-li a:hover {
-  /*  */
-  background-color: rgb(80, 2, 2, 0.2);
-  /*font-size: 130%; */
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
 }
 
-li a .active {
-  /*  */
-  background-color: #111;
+li.dropdown {
+  display: inline-block;
 }
 
-.topnav a.active {
-  background-color: #410909;
-  color: white;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-/* Style the search box inside the navigation bar */
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
+.dropdown-content a:hover {background-color: #f1f1f1;}
 
-body{background-color: white;
-  background-image: url();
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: thistle;
- 
+.dropdown:hover .dropdown-content {
+  display: block;
 }
-p {
-background-color: transparent;
-}
-.intro {
-color:blue;
-background-color: #e6e6e6;
-}
-#p2 {
-background-color: transparent;
-
-}
-
-.dark{background-color:transparent;
-color:#020202;}
-.b1{background-color: transparent;}
