@@ -46,6 +46,7 @@ fieldset{
 h1{
   font-family: cursive;
   font-weight: 150;
+
 }
 
 
@@ -72,6 +73,7 @@ button {
   border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
+  box-shadow: 2px 2px 20px rgb(255, 255, 255);
 }
 button:hover {
   background-color: rgb(0, 0, 0);
@@ -79,6 +81,7 @@ button:hover {
   transition: 0.5s;
   cursor: pointer;
   transform: scale(1.2);
+  box-shadow: 2px 2px 20px rgb(255, 255, 255);
 }
 button{
   background-color:transparent;
