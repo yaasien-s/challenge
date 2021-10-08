@@ -176,3 +176,6 @@ body{
   }
 }
 
+fieldset{
+  margin: 10px;
+}
